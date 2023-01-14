@@ -1,23 +1,21 @@
 import './App.css';
-
+import Message from './components/Message';
+import Itemlist from './components/Itemlist';
+import Form from './components/Form';
+import Itemlist2 from './components/Itemlist2';
+import Parentcomp from './components/Parentcomp';
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Message message= "Hello World!" />
+     <Itemlist items={['akhil','akshay','anu','ravi']} />
+     <Form />
+     <Itemlist2 items = {['Masters','FAANG','Peace']} />
+     <Parentcomp />
     </div>
+    
+    </>
   );
 }
 
